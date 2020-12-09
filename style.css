@@ -1,0 +1,147 @@
+/******************* COVID 19 ***************/
+
+body{
+    background-color: black;
+}
+
+/* COVID 19 */
+.cls-1 { 
+    /*fill: #87870f;*/
+    stroke-dasharray: 657;
+    stroke-dashoffset: 657;
+    animation: covid_couleur 2s forwards;
+}
+
+@keyframes covid_couleur{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: #87870f;
+    }
+}
+
+
+.o{
+    animation-delay: 1s;
+}
+.v{
+    animation-delay: 3s;
+}
+.i{
+    animation-delay: 4s;
+}
+.d{
+    animation-delay: 5s;
+}
+.un{
+    animation-delay: 6s;
+}
+.neuf{
+    animation-delay: 7s;
+}
+
+/* STAY AT HOME */
+.sah {
+    fill: transparent;
+    stroke: red!important;
+    stroke-dasharray: 657;
+    stroke-dashoffset: 657;
+    animation: sah_contour 5s forwards 10s, sah_couleur 1s alternate infinite 11s;   
+}
+
+@keyframes sah_contour{
+    from{
+        stroke-dashoffset: 657;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes sah_couleur{
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: red;
+    }
+}
+
+/* VIRUS */
+
+.virus {
+    fill: transparent;
+    stroke: red!important;
+    stroke-dasharray: 657;
+    stroke-dashoffset: 657;
+    animation: virus_contour 20s forwards;
+}
+
+@keyframes virus_contour{
+    from{
+        stroke-dashoffset: 657;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+/* MASQUE */
+
+.masque{
+    fill: transparent;
+    stroke: white!important;
+    stroke-dasharray: 657;
+    stroke-dashoffset: 657;
+    animation: masque_contour 20s forwards;
+}
+
+@keyframes masque_contour{
+    from{
+        stroke-dashoffset: 657;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+/* SYMBOLES */
+
+.symbole{
+    fill: transparent;
+    stroke: white!important;
+    stroke-dasharray: 657;
+    stroke-dashoffset: 657;
+    stroke-width: 0.5px;
+    animation: symbole_contour 10s forwards 12s;
+}
+
+@keyframes symbole_contour{
+    from{
+        stroke-dashoffset: 657;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.cls-1,
+.cls-2 {
+    stroke: #000;
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+    stroke-miterlimit: 10;
+}
+
+
+
+.cls-3 {
+    stroke: #333;
+}
+
+
+
